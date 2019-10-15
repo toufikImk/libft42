@@ -6,7 +6,7 @@
 /*   By: tkhattar <tkhattar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 21:03:45 by tkhattar          #+#    #+#             */
-/*   Updated: 2019/10/14 21:04:55 by tkhattar         ###   ########.fr       */
+/*   Updated: 2019/10/14 21:50:47 by tkhattar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ int ft_isascii(int c);
 int ft_isprint(int c);
 int ft_toupper(int c);
 int ft_tolower(int c);
-
 void *ft_memalloc(size_t size);
 void ft_memdel(void **ap);
 char *ft_strnew(size_t size);
@@ -82,5 +81,5 @@ void ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void ft_lstadd(t_list **alst, t_list *new);
 void ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-
+void    ft_lstrev(t_list **alst);
 #endif
