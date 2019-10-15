@@ -6,7 +6,7 @@
 /*   By: tkhattar <tkhattar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 21:03:45 by tkhattar          #+#    #+#             */
-/*   Updated: 2019/10/14 21:50:47 by tkhattar         ###   ########.fr       */
+/*   Updated: 2019/10/14 21:52:52 by tkhattar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,5 @@ void ft_lstadd(t_list **alst, t_list *new);
 void ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void    ft_lstrev(t_list **alst);
+size_t	ft_lstcount(t_list *lst);
 #endif
