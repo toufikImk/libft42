@@ -6,7 +6,7 @@
 /*   By: tkhattar <tkhattar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 01:08:56 by tkhattar          #+#    #+#             */
-/*   Updated: 2019/10/13 11:49:47 by tkhattar         ###   ########.fr       */
+/*   Updated: 2019/10/15 00:37:08 by tkhattar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,8 @@ char			**ft_strsplit(char const *s, char c)
 	size_t	cur;
 	size_t	wordcount;
 
+	if (!s)
+		return (NULL);
 	wordcount = ft_countwords((char *)s, c);
 	split = (char **)ft_memalloc((wordcount + 1) * sizeof(char *));
 	if (split == NULL)

@@ -6,7 +6,7 @@
 /*   By: tkhattar <tkhattar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 01:07:26 by tkhattar          #+#    #+#             */
-/*   Updated: 2019/10/13 11:48:30 by tkhattar         ###   ########.fr       */
+/*   Updated: 2019/10/15 00:38:46 by tkhattar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char		*ft_strtrim(char const *s)
 	size_t	end;
 	char	*new;
 
+	if (!s)
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s);
 	while (ft_iswhitespace(s[start]))

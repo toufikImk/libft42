@@ -1,0 +1,4 @@
+if ((nbr * sign) >= 469762049)
+			return (-1);
+		else if ((nbr * sign) <= -469762049)
+			return (0);

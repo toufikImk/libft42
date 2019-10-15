@@ -6,7 +6,7 @@
 /*   By: tkhattar <tkhattar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 22:08:12 by tkhattar          #+#    #+#             */
-/*   Updated: 2019/10/12 22:09:39 by tkhattar         ###   ########.fr       */
+/*   Updated: 2019/10/14 23:32:28 by tkhattar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_strclr(char *as)
 {
-	while (*as)
-	{
-		*as = 0;
-		as++;
-	}
+	if (as == NULL)
+		return ;
+	ft_bzero(as, ft_strlen(as));
 }

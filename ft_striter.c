@@ -6,15 +6,16 @@
 /*   By: tkhattar <tkhattar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 22:10:43 by tkhattar          #+#    #+#             */
-/*   Updated: 2019/10/12 22:13:33 by tkhattar         ###   ########.fr       */
+/*   Updated: 2019/10/14 23:39:19 by tkhattar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_striter(char *c, void (*f)(char *))
 {
-	while (*c)
-	{
-		(*f)(c);
-		c++;
-	}
+	if (c && f)
+		while (*c)
+		{
+			(*f)(c);
+			c++;
+		}
 }

@@ -6,7 +6,7 @@
 /*   By: tkhattar <tkhattar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 07:12:38 by tkhattar          #+#    #+#             */
-/*   Updated: 2019/10/13 07:39:27 by tkhattar         ###   ########.fr       */
+/*   Updated: 2019/10/14 23:13:22 by tkhattar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,6 @@ int	ft_atoi(const char *str)
 		i++;
 	while (str[i] && str[i] <= '9' && str[i] >= '0')
 	{
-		if ((nbr * sign) >= 469762049)
-			return (-1);
-		else if ((nbr * sign) <= -469762049)
-			return (0);
 		nbr = nbr * 10 + (str[i] - '0');
 		i++;
 	}
