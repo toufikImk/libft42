@@ -12,6 +12,8 @@ SRC =	ft_atoi.c ft_bzero.c ft_isalnum.c \
 	 ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c \
 	 ft_strncmp.c ft_strncpy.c ft_strnequ.c ft_strnew.c ft_strnstr.c \
 	 ft_strrchr.c ft_strsplit.c ft_strstr.c \
+	 btree_apply_infix.c btree_apply_prefix.c btree_apply_suffix.c btree_create_node.c \
+	 btree_search_item.c btree_level_count.c btree_insert_data.c 
 	 ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
 OBJECTS = ft_atoi.o ft_bzero.o ft_isalnum.o \
 		ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o \
