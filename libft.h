@@ -6,7 +6,7 @@
 /*   By: tkhattar <tkhattar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 21:03:45 by tkhattar          #+#    #+#             */
-/*   Updated: 2019/10/15 02:10:46 by tkhattar         ###   ########.fr       */
+/*   Updated: 2019/10/15 02:28:58 by tkhattar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,10 +89,10 @@ void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
+t_btree			*btree_create_node(void *item);
 void			btree_apply_infix(t_btree *root, void (*applyf)(void *));
 void			btree_apply_prefix(t_btree *root, void (*applyf)(void *));
 void			btree_apply_suffix(t_btree *root, void (*applyf)(void *));
-t_btree			*btree_create_node(void *item);
 void			btree_insert_data(t_btree **root, void *item,
 				int (*cmpf)(void *, void *));
 int				btree_level_count(t_btree *root);
