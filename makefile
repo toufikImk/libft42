@@ -1,7 +1,7 @@
 NAME = libft.a
 SRC =	*.c
 OBJECTS = *.o
-INCLUDES = includes/
+INCLUDES = libft.h
 
 all : $(NAME)
 $(NAME):
